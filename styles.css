@@ -1,0 +1,202 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sauce Sans Black', sans-serif;
+    color: #f0f0f0;
+    background-color: #000000;
+}
+
+header {
+    background: #121212;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    font-family: 'Open Sauce Sans Black', sans-serif;
+    font-size: 1.8rem;
+    color: #f0f0f0;
+}
+
+.cta-btn {
+    background: #f0f0f0;
+    color: #121212;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: auto;
+    color: #f0f0f0;
+}
+
+h2 {
+    font-size: 5rem;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background:#000000 ;
+    color: #f0f0f0;
+}
+
+.hero h2     {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #f0f0f0;
+    animation: typing 4s steps(30) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+
+.hero-btn {
+    font-family: 'Open Sauce Sans Black', sans-serif;
+    margin-top: 1rem;
+    background: #f0f0f0;
+    color: #121212;
+    border-radius: 5px;
+}
+
+.about, .product, .features, .pricing, .order, .contact {
+    background: #1a1a1a;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.testimonials {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f0000000;
+}
+
+.testimonials h3 {
+    font-size: 2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-flex;
+    animation: scroll-marquee 15s linear infinite;
+}
+
+.testimonial-box {
+    display: inline-block;
+    background: #f0000000;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0 1rem;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+.testimonial-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-box p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #ccc;
+    text-align: center;
+}
+
+.testimonial-box span {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.product-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #121212;
+    color: #f0f0f0;
+    margin-top: 2rem;
+}
+
